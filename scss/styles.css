@@ -1,0 +1,237 @@
+body {
+  font-family: "proxima-nova", sans-serif;
+  padding-bottom: 10em;
+}
+
+.border {
+  height: 6px;
+  border: 0;
+  background-color: #fd7473;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fd7473), color-stop(25%, #fd7473), color-stop(25%, #fd7473), color-stop(50%, #fec951), color-stop(50%, #fec951), color-stop(75%, #47b8e0), color-stop(75%, #47b8e0), color-stop(100%, #9f68d0), to(#9f68d0));
+  background-image: linear-gradient(to right, #fd7473, #fd7473 25%, #fd7473 25%, #fec951 50%, #fec951 50%, #47b8e0 75%, #47b8e0 75%, #9f68d0 100%, #9f68d0 100%);
+  -webkit-background-size: 50% 100%;
+  -moz-backgorund-size: 50% 100%;
+  background-size: 50% 100%;
+}
+
+.wrapper {
+  width: 1080px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.main_header {
+  margin: 5em 0 3em 0;
+}
+
+.logo {
+  float: left;
+}
+
+.logo h1 {
+  text-transform: uppercase;
+  color: #34314c;
+}
+
+.logo h1 span {
+  font-weight: 400;
+}
+
+.nav {
+  float: right;
+  padding-top: 1.75em;
+  font-size: 1.2em;
+}
+
+.nav .current {
+  font-weight: bold;
+  color: #34314c;
+}
+
+.nav a {
+  color: #9592ad;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+#timeline {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+#timeline::after {
+  content: " ";
+  width: 1px;
+  background: 1px #d9dee9;
+  height: 90%;
+  position: absolute;
+  top: 5em;
+  left: 3em;
+  z-index: 0;
+}
+
+#timeline a {
+  text-decoration: none;
+}
+
+#timeline .listing {
+  background: white;
+  border: 1px solid #d9dee9;
+  border-radius: 0.3em;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  display: table;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#timeline .listing img,
+#timeline .listing .info,
+#timeline .listing .job_type {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 0.9em;
+  color: #9592ad;
+}
+
+#timeline .listing .image_wrapper {
+  width: 60px;
+}
+
+#timeline .listing .image_wrapper img {
+  width: 60px;
+  margin: 0 auto;
+  border-radius: 0.25em;
+}
+
+#timeline .listing .info {
+  line-height: 1.5;
+  width: 900px;
+  padding-left: 25px;
+}
+
+#timeline .listing .info .job_title {
+  font-weight: bold;
+  color: #34314c;
+  font-size: 1.5em;
+}
+
+#timeline .listing .info .job_info {
+  color: #9592ad;
+  display: block;
+}
+
+#timeline .listing .info .job_info span {
+  margin: 0 0.75em;
+}
+
+#timeline .listing .job_type {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+  position: relative;
+  white-space: nowrap;
+  padding-top: 0.6em;
+  width: 100px;
+}
+
+#timeline .listing .job_type:before {
+  content: " ";
+  background-color: #fd7473;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: -20px;
+  top: 27px;
+}
+
+#timeline .listing .full_time {
+  color: #fd7473;
+}
+
+#timeline .listing .full_time:before {
+  background: #fd7473;
+}
+
+#timeline .listing .part_time {
+  color: #fec951;
+}
+
+#timeline .listing .part_time:before {
+  background: #fec951;
+}
+
+#timeline .listing .freelance {
+  color: #47b8e0;
+}
+
+#timeline .listing .freelance:before {
+  background: #47b8e0;
+}
+
+#timeline .listing .contract {
+  color: #9f68d0;
+}
+
+#timeline .listing .contract:before {
+  background: #9f68d0;
+}
+
+#timeline .listing:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+#timeline .date {
+  display: inline-block;
+  padding: 0.9em 0;
+  width: 100px;
+  background: white;
+  border: 1px solid #d9dee9;
+  border-radius: 3em;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin: 1em 0 2em 0;
+}
+
+.load_more {
+  text-align: center;
+}
+
+.load_more .button {
+  border: 2px solid #47b8e0;
+  outline: none;
+  padding: 1em 3.5em;
+  text-align: center;
+  background: transparent;
+  border-radius: 3em;
+  color: #47b8e0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.load_more .button:hover {
+  border: 3px solid #47b8e0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
